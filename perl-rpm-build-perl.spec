@@ -1,6 +1,6 @@
 %define module   rpm-build-perl
-%define version    0.6.8
-%define release    %mkrel 2
+%define version    0.70
+%define release    %mkrel 1
 
 Name:       perl-%{module}
 Version:    %{version}
