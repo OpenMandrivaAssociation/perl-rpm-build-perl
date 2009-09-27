@@ -1,5 +1,5 @@
 %define upstream_name    rpm-build-perl
-%define upstream_version 0.70
+%define upstream_version 0.71
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
