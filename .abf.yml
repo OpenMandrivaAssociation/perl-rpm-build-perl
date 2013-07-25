@@ -1,2 +1,4 @@
+removed_sources:
+  rpm-build-perl-0.74.tar.gz: 59b596283ba0511878a4362e01450da90e5e250e
 sources:
-  "rpm-build-perl-0.74.tar.gz": 59b596283ba0511878a4362e01450da90e5e250e
+  rpm-build-perl-0.82.tar.gz: 98a3c338fb6ebfb34bd9cc3e8202788bb2dadc3e

@@ -1,15 +1,15 @@
 %define upstream_name    rpm-build-perl
-%define upstream_version 0.74
+%define upstream_version 0.82
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 0.82
+Release:	1
 
 Summary:	Perl compiler backend to extract Perl dependencies
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/B/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/B/rpm-build-perl-0.82.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(B)
@@ -83,3 +83,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sat May 31 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.6.8-1mdv2009.0
 - first mdv release
+
