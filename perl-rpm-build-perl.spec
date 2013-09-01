@@ -2,14 +2,14 @@
 %define upstream_version 0.82
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.82
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Perl compiler backend to extract Perl dependencies
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/B/rpm-build-perl-0.82.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/B/rpm-build-perl-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(B)
