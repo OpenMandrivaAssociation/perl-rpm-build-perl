@@ -1,15 +1,15 @@
 %define upstream_name    rpm-build-perl
-%define upstream_version 0.74
+%define upstream_version 0.82
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Perl compiler backend to extract Perl dependencies
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/B/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/B/rpm-build-perl-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(B)
@@ -17,7 +17,6 @@ BuildRequires:	perl(Encode)
 BuildRequires:	perl(O)
 BuildRequires:	perl(Safe)
 BuildRequires:	perl(Test::More)
-BuildArch:	noarch
 
 %description
 B::PerlReq is a backend module for the Perl compiler that extracts
@@ -44,7 +43,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc README Changes META.yml
 %{_mandir}/man1/*
 %{_mandir}/man3/*
-%{perl_vendorlib}/*
+%{perl_vendorarch}/*
 %{_bindir}/perl.*
 
 %changelog
@@ -83,3 +82,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sat May 31 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.6.8-1mdv2009.0
 - first mdv release
+
