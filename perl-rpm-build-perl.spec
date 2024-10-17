@@ -8,7 +8,7 @@ Release:	3
 Summary:	Perl compiler backend to extract Perl dependencies
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/B/rpm-build-perl-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
